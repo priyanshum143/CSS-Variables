@@ -1,0 +1,68 @@
+*{	
+	margin: 0;  padding: 0;
+	font-family: sans-serif;
+}
+
+body {
+    background-color: #51557E;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+:root{
+	--base: black;
+	--spacing: 10px;
+	--blur: 0;
+}
+
+#main-div{
+	width: 100vw;  height: 100vh;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center; 
+}
+
+#heading-div{
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+#button-container{
+	margin-bottom: 3rem;
+}
+
+.label{
+	margin-left: 20px;
+}
+
+.input{
+	margin-left: 20px;
+}
+
+#color-input{
+	width: 70px;
+}
+
+#image{
+	background-size: cover;
+	width: 400px;  height: 400px;
+	padding: var(--spacing);
+	background-color: var(--base);
+	filter: blur(var(--blur));
+}
+
+span{
+	color: var(--base);
+}
